@@ -1,5 +1,4 @@
-import React from 'react'
-import './SingUp.scss'
+import './SignUp.scss'
 
 export const SignUp = () => {
   return (

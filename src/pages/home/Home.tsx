@@ -24,8 +24,8 @@ export const Home = () => {
         </div>
       </div>
       <div className="home-middle">
-        {cardInfo.map((item) => (
-          <Card key={item.id}/>
+        {cardInfo.map((item: any) => (
+          <Card key={item.id} information={item} />
         ))}
       </div>
       <div className="home-bottom">

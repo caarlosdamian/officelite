@@ -110,3 +110,10 @@ $border-radius-48: 3rem;
     }
   }
 }
+
+@mixin card-labels {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}

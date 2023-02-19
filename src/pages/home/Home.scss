@@ -4,9 +4,11 @@
   &-top {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     gap: 64px;
+    padding: 0 24px;
+    min-height: 1684px;
     &-left {
       &-img {
         width: 171px;
@@ -34,5 +36,26 @@
         color: $rhythm;
       }
     }
+  }
+
+  &-middle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-direction: column;
+    top: 900px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    @include for-size("lumia") {
+      top: 1000px;
+    }
+  }
+  &-bottom {
+    height: 1248px;
+    background: #25293a;
   }
 }

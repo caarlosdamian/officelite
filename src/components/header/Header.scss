@@ -1,12 +1,12 @@
 .header {
-  padding: 46px 24px;
+  padding: 46px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 80px;
   position: relative;
-  overflow: hidden;
+  overflow-y: hidden;
 
   .header-pattern {
     position: absolute;

@@ -1,0 +1,14 @@
+@import "../../common/constants/index.scss";
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  border-radius: 13px;
+  width: 327px;
+  height: 508px;
+  padding: 40px 78px;
+
+  @include for-size("lumia") {
+    width: 300px;
+  }
+}

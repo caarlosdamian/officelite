@@ -4,14 +4,16 @@ import "./Header.scss";
 
 export const Header = () => {
   return (
-    <div className="header">
-      <img src={logo} className="header-logo" alt="logo" />
-      <img
-        src={bgPatternHeader}
-        className="header-pattern"
-        alt="header-pattern"
-      />
+    <>
+      <div className="header">
+        <img src={logo} className="header-logo" alt="logo" />
+        <img
+          src={bgPatternHeader}
+          className="header-pattern"
+          alt="header-pattern"
+        />
+      </div>
       <Outlet />
-    </div>
+    </>
   );
 };

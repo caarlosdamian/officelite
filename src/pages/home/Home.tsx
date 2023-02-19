@@ -1,6 +1,8 @@
 import "./Home.scss";
 import { charts } from "../../assets/";
 import { Button } from "../../components/button/Button";
+import { cardInfo } from "../../common/utils";
+import { Card } from "../../components/card/Card";
 
 export const Home = () => {
   return (
@@ -21,7 +23,11 @@ export const Home = () => {
           <Button variant="primary" label="Get Started" />
         </div>
       </div>
-      <div className="home-middle"></div>
+      <div className="home-middle">
+        {cardInfo.map((item) => (
+          <Card key={item.id}/>
+        ))}
+      </div>
       <div className="home-bottom">
         <div className="home-bottom-left"></div>
         <div className="home-bottom-right"></div>

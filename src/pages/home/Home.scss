@@ -55,7 +55,21 @@
     }
   }
   &-bottom {
-    height: 1248px;
+    height: 1200px;
     background: #25293a;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 100px 24px;
+    position: relative;
+    z-index: -1;
+
+    &-img {
+      position: absolute;
+      bottom: 66px;
+      width: 850px;
+      height: 850px;
+      z-index: 1;
+    }
   }
 }

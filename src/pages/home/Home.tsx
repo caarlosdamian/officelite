@@ -1,8 +1,9 @@
 import "./Home.scss";
-import { charts } from "../../assets/";
+import { bgPatternFooter, charts } from "../../assets/";
 import { Button } from "../../components/button/Button";
 import { cardInfo } from "../../common/utils";
 import { Card } from "../../components/card/Card";
+import { Count } from "../../components/count/Count";
 
 export const Home = () => {
   return (
@@ -29,8 +30,12 @@ export const Home = () => {
         ))}
       </div>
       <div className="home-bottom">
-        <div className="home-bottom-left"></div>
-        <div className="home-bottom-right"></div>
+        <img
+          className="home-bottom-img"
+          src={bgPatternFooter}
+          alt="bgPatternFooter"
+        />
+        <Count />
       </div>
     </div>
   );

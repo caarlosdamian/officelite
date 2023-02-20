@@ -63,3 +63,5 @@ export const cardInfo = [
     ],
   },
 ];
+
+export const date = ["days", "hours", "min", "sec"];

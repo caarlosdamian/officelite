@@ -1,0 +1,77 @@
+@import "../../common/constants/index.scss";
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 2;
+  &-top {
+    &-title {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 48px;
+      text-align: center;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #ffffff;
+      strong {
+        color: #5175ff;
+      }
+
+      &.light {
+        color: #333950;
+      }
+    }
+  }
+
+  &-middle {
+    display: grid;
+    grid-template-columns: repeat(4, 72px);
+    gap: 12px;
+    margin-bottom: 32px;
+    @include for-size("lumia") {
+      grid-template-columns: repeat(4, 65px);
+    }
+
+    .count-wrapper {
+      background: #333950;
+      border-radius: 4px;
+      padding: 11px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 4px;
+
+      &.light {
+        background: rgba(81, 117, 255, 1);
+
+        &-title {
+          color: #5175ff;
+        }
+      }
+
+      &-title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      &-subtitle {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 28px;
+        text-align: center;
+        color: #ffffff;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+      }
+    }
+  }
+}

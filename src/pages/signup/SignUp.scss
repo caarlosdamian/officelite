@@ -12,5 +12,13 @@
   &-footer {
     height: 320px;
     background: #25293a;
+    position: relative;
+    .img-bg {
+      position: absolute;
+      width: 486.47px;
+      height: 486.47px;
+      left: -55px;
+      top: -50px;
+    }
   }
 }

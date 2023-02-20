@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { bgPatternSide } from "../../assets";
 import { Count } from "../../components/count/Count";
 import { Form } from "../../components/form/Form";
 import { Headers } from "../../components/headers/Headers";
@@ -21,7 +22,9 @@ export const SignUp = () => {
         <Count light={true} />
       </div>
       <Form />
-      <div className="sing-up-footer"></div>
+      <div className="sing-up-footer">
+        <img src={bgPatternSide} alt="" className="img-bg"/>
+      </div>
     </div>
   );
 };

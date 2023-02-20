@@ -92,7 +92,7 @@ export const inputInfo = [
         price: "$19.99",
       },
     ],
-    select: false,
+    select: true,
   },
   {
     id: "email",

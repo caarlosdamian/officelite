@@ -65,3 +65,48 @@ export const cardInfo = [
 ];
 
 export const date = ["days", "hours", "min", "sec"];
+
+export const inputInfo = [
+  {
+    id: "name",
+    name: "Name",
+    select: false,
+  },
+  {
+    id: "tier",
+    name: "Options",
+    options: [
+      {
+        id: "tier1",
+        name: "Basic Pack",
+        price: "Free",
+      },
+      {
+        id: "tier2",
+        name: "Pro Pack",
+        price: "$9.99",
+      },
+      {
+        id: "tier3",
+        name: "Ultimate Pack",
+        price: "$19.99",
+      },
+    ],
+    select: false,
+  },
+  {
+    id: "email",
+    name: "Email Address",
+    select: false,
+  },
+  {
+    id: "number",
+    name: "Phone Number",
+    select: false,
+  },
+  {
+    id: "company",
+    name: "Company",
+    select: false,
+  },
+];

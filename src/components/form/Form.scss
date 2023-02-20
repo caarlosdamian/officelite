@@ -1,0 +1,23 @@
+.form {
+  background: #ffffff;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  border-radius: 13px;
+  padding: 24px;
+  width: 327px;
+  height: 495px;
+  position: absolute;
+  bottom: 87px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+
+  .button.primary {
+    align-self: center;
+    width: 100%;
+    margin-top: 36px;
+  }
+}

@@ -1,3 +1,5 @@
+import { HTMLInputTypeAttribute, InputHTMLAttributes } from "react";
+
 export interface CardInformation {
   id: number;
   title: string;
@@ -19,4 +21,8 @@ export interface HeadersI {
   children?: JSX.Element;
   title: string;
   subtitle: string;
+}
+
+export interface InputI extends React.InputHTMLAttributes<HTMLInputElement> {
+  error: boolean;
 }

@@ -4,6 +4,8 @@ import { Button } from "../../components/button/Button";
 import { cardInfo } from "../../common/utils";
 import { Card } from "../../components/card/Card";
 import { Count } from "../../components/count/Count";
+import { Headers } from "../../components/headers/Headers";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -12,17 +14,16 @@ export const Home = () => {
         <div className="home-top-left">
           <img src={charts} alt="charts" className="home-top-left-img" />
         </div>
-        <div className="home-top-right">
-          <h1 className="home-top-right-title">
-            A simple solution to complex tasks is coming soon
-          </h1>
-          <span className="home-top-right-subtitle">
-            Say goodbye to inefficient juggling of multiple apps, teams, and
-            projects. Officelite is the new collaboration platform built with an
-            intuitive interface to improve productivity.
-          </span>
-          <Button variant="primary" label="Get Started" />
-        </div>
+        <Headers
+          title={"A simple solution to complex tasks is coming soon"}
+          subtitle={
+            "Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new collaboration platform built with an intuitive interface to improve productivity."
+          }
+        >
+          <Link to={"/singup"} className='link'>
+            <Button variant="primary" label="Get Started" />
+          </Link>
+        </Headers>
       </div>
       <div className="home-middle">
         {cardInfo.map((item: any) => (

@@ -17,12 +17,12 @@ export const Count = ({ light }: any) => {
       <div className="count-middle">
         {date.map((item: any) => (
           <div className={`count-wrapper ${light ? "light" : ""}`}>
-            <span className={`count-wrapper-title`}>
+            <span className={`count-wrapper-title ${light ? "light" : ""}`}>
               {launchDate[item] < 10
                 ? `0${launchDate[item]}`
                 : launchDate[item]}
             </span>
-            <span className="count-wrapper-subtitle">{item}</span>
+            <span className={`count-wrapper-subtitle ${light ? "light" : ""}`}>{item}</span>
           </div>
         ))}
       </div>

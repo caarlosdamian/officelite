@@ -14,3 +14,9 @@ export interface CardInformation {
 export interface CardI {
   information: CardInformation;
 }
+
+export interface HeadersI {
+  children?: JSX.Element;
+  title: string;
+  subtitle: string;
+}

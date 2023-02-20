@@ -46,11 +46,8 @@
       gap: 4px;
 
       &.light {
-        background: rgba(81, 117, 255, 1);
-
-        &-title {
-          color: #5175ff;
-        }
+        background: rgba(81, 117, 255, 0.1);
+        mix-blend-mode: normal;
       }
 
       &-title {
@@ -61,6 +58,10 @@
         align-items: flex-end;
         text-align: center;
         color: #ffffff;
+
+        &.light {
+          color: #5175ff;
+        }
       }
 
       &-subtitle {
@@ -71,6 +72,12 @@
         color: #ffffff;
         mix-blend-mode: normal;
         opacity: 0.5;
+
+        &.light {
+          color: #333950;
+          mix-blend-mode: normal;
+          opacity: 0.5;
+        }
       }
     }
   }

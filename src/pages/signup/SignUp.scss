@@ -1,0 +1,15 @@
+.sing-up {
+  &-top {
+    padding: 0 24px 263px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  &-footer {
+    height: 320px;
+    background: #25293a;
+  }
+}

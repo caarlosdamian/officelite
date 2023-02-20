@@ -12,6 +12,10 @@
     line-height: $line-height-48;
     text-align: center;
     color: $charcoal;
+
+    @include for-size("tablet-portrait-up") {
+      font-size: 40px;
+    }
   }
   &-subtitle {
     font-weight: $font-weight-400;

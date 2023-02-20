@@ -25,6 +25,12 @@ export const Card = ({ information }: CardI) => {
           <div className="bottom-wrapper">
             <h1 className="bottom-wrapper-title">{tier}</h1>
             <h3 className="bottom-wrapper-description">{description}</h3>
+            <div className="button-wrap">
+              <Button
+                label="Try for Free"
+                variant={img ? "third" : "secondary"}
+              />
+            </div>
           </div>
         </div>
         <div className={img ? "card-bottom blue" : "card-bottom"}>
@@ -35,12 +41,9 @@ export const Card = ({ information }: CardI) => {
               </span>
             ))}
           </div>
-          <div className="bottom-wrapper">
-            <Button
-              label="Try for Free"
-              variant={img ? "third" : "secondary"}
-            />
-          </div>
+        </div>
+        <div className="button-remove">
+          <Button label="Try for Free" variant={img ? "third" : "secondary"} />
         </div>
       </div>
     </Slide>

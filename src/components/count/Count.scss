@@ -31,8 +31,14 @@
     grid-template-columns: repeat(4, 72px);
     gap: 12px;
     margin-bottom: 32px;
+
     @include for-size("lumia") {
       grid-template-columns: repeat(4, 65px);
+    }
+
+    @include for-size("tablet-portrait-up") {
+      grid-template-columns: repeat(4, 100px);
+      height: 128px;
     }
 
     .count-wrapper {
@@ -50,6 +56,10 @@
         mix-blend-mode: normal;
       }
 
+      @include for-size("tablet-portrait-up") {
+        padding: 14px;
+      }
+
       &-title {
         font-weight: 700;
         font-size: 32px;
@@ -58,6 +68,10 @@
         align-items: flex-end;
         text-align: center;
         color: #ffffff;
+
+        @include for-size("tablet-portrait-up") {
+          font-size: 56px;
+        }
 
         &.light {
           color: #5175ff;

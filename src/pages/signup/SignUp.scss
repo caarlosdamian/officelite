@@ -1,3 +1,5 @@
+@import "../../common/constants/index.scss";
+
 .sing-up {
   transition: 0.5s all ease;
   &-top {
@@ -7,6 +9,9 @@
     justify-content: center;
     flex-direction: column;
     gap: 64px;
+    @include for-size("tablet-portrait-up") {
+      padding: 0 98px 358px 98px;
+    }
   }
 
   &-footer {

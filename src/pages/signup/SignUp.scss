@@ -6,6 +6,7 @@
   @include for-size("desktop-up") {
     display: flex;
     padding: 0 165px;
+    height: 100vh;
   }
   &-top {
     padding: 0 24px 263px 24px;
@@ -32,7 +33,7 @@
 
     @include for-size("desktop-up") {
       width: 420px;
-      height: 1152px;
+      height: 100%;
       position: absolute;
       top: 0;
       right: 0;

@@ -4,10 +4,10 @@ import "./Select.scss";
 
 export const Select = ({ item }: any) => {
   const [selected, setSelected] = useState("Basic Pack");
-  const [active, setactive] = useState(true);
+  const [active, setactive] = useState(false);
   const { name, options } = item;
   return (
-    <div className="select">
+    <div className="select" onClick={() => setactive(!active)}>
       <div className="select-labels">
         <span className="select-labels-title">{selected}</span>
         <img

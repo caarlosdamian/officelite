@@ -19,10 +19,18 @@
     width: 689px;
     height: 316px;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    // justify-content: flex-start;
+    // align-items: center;
     padding: 48px;
     gap: 175px;
+  }
+
+  @include for-size("desktop-up") {
+    width: 327px;
+    height: 508px;
+    flex-direction: column;
+    gap: 56px;
+    padding: 40px 24px;
   }
 
   &.blue {
@@ -51,6 +59,12 @@
       flex: 1;
     }
 
+    @include for-size("desktop-up") {
+      display: flex;
+    align-items: center;
+    flex: .5;
+    }
+
     &.blue {
       .top-wrapper {
         &-title {
@@ -77,6 +91,9 @@
         @include for-size("tablet-portrait-up") {
           text-align: start;
         }
+        @include for-size("desktop-up") {
+          text-align: center;
+        }
       }
     }
     .bottom-wrapper {
@@ -92,6 +109,12 @@
         gap: 24px;
       }
 
+      @include for-size("desktop-up") {
+        align-items: center;
+      justify-content: center;
+      gap: 8px;
+      }
+
       &-title {
         font-weight: 700;
         font-size: 56px;
@@ -105,12 +128,18 @@
         @include for-size("tablet-portrait-up") {
           text-align: start;
         }
+        @include for-size("desktop-up") {
+          text-align: center;
+        }
       }
 
       .button-wrap {
         display: none;
         @include for-size("tablet-portrait-up") {
           display: block;
+        }
+        @include for-size("desktop-up") {
+          display: none;
         }
       }
     }

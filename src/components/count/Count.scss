@@ -7,7 +7,30 @@
   flex-direction: column;
   gap: 18px;
   z-index: 2;
+
+  .count-bottom{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    .button {
+      @include for-size("desktop-up") {
+        max-width: 171px;
+      }
+    }
+  }
+
+ 
+
+  @include for-size("desktop-up") {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    column-gap: 491px;
+  }
   &-top {
+    @include for-size("desktop-up") {
+      grid-column: 1/3;
+    }
     &-title {
       font-weight: 700;
       font-size: 1rem;
@@ -31,6 +54,10 @@
     grid-template-columns: repeat(4, 72px);
     gap: 12px;
     margin-bottom: 32px;
+    @include for-size("desktop-up") {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
 
     @include for-size("lumia") {
       grid-template-columns: repeat(4, 65px);

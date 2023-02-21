@@ -15,6 +15,10 @@
       align-items: flex-start;
       min-height: 1000px;
     }
+    @include for-size("desktop-up") {
+      padding: 0 165px;
+      gap: 95px;
+    }
     &-left {
       &-img {
         width: 171px;
@@ -23,6 +27,10 @@
         @include for-size("tablet-portrait-up") {
           width: 281px;
           height: 314px;
+        }
+        @include for-size("desktop-up") {
+          width: 475px;
+          height: 531px;
         }
       }
     }
@@ -46,6 +54,10 @@
     @include for-size("tablet-portrait-up") {
       top: 698px;
     }
+    @include for-size("desktop-up") {
+      flex-direction: row;
+      top: 928px;
+    }
   }
   &-bottom {
     height: 1200px;
@@ -61,6 +73,12 @@
       height: 986px;
       align-items: center;
       padding-top: 598px;
+    }
+
+    @include for-size("desktop-up") {
+      height: 603px;
+      // padding-top: 336px;
+      padding: 336px 165px 91px;
     }
 
     &-img {

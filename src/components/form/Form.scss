@@ -23,6 +23,11 @@
     height: 508px;
   }
 
+  @include for-size("desktop-up") {
+    right: 165px;
+    left: 830px;
+  }
+
   .button.primary {
     align-self: center;
     width: 100%;

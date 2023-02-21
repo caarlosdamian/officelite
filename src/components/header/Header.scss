@@ -1,3 +1,5 @@
+@import "../../common/constants/index.scss";
+
 .header {
   padding: 46px 0;
   display: flex;
@@ -6,6 +8,11 @@
   flex-direction: column;
   gap: 80px;
   position: relative;
+
+  @include for-size("tablet-portrait-up") {
+    padding: 72px 40px 104px 40px;
+    align-items: flex-start;
+  }
 }
 
 .header-pattern {

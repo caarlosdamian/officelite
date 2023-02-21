@@ -9,13 +9,23 @@
     gap: 64px;
     padding: 0 24px;
     min-height: 1684px;
+
+    @include for-size("tablet-portrait-up") {
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      min-height: 1000px;
+    }
     &-left {
       &-img {
         width: 171px;
         height: 192px;
+
+        @include for-size("tablet-portrait-up") {
+          width: 281px;
+          height: 314px;
+        }
       }
     }
-
   }
 
   &-middle {
@@ -33,6 +43,9 @@
     @include for-size("lumia") {
       top: 1000px;
     }
+    @include for-size("tablet-portrait-up") {
+      top: 698px;
+    }
   }
   &-bottom {
     height: 1200px;
@@ -43,6 +56,12 @@
     padding: 100px 24px;
     position: relative;
     z-index: -1;
+
+    @include for-size("tablet-portrait-up") {
+      height: 986px;
+      align-items: center;
+      padding-top: 598px;
+    }
 
     &-img {
       position: absolute;
